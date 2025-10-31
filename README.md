@@ -1,0 +1,2 @@
+# BaseballFreak
+Blogのデータページ
