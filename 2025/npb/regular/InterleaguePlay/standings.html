@@ -2,81 +2,73 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>2025年6月24日時点 プロ野球全12球団順位</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロ野球順位表</title>
     <style>
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #f8f8f8;
-            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
             color: #333;
-        }
-        h2 {
-            color: #004d40;
-            border-bottom: 2px solid #004d40;
-            padding-bottom: 5px;
-            margin-top: 30px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            background-color: #ffffff;
-            font-size: 0.95em;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden; /* For rounded corners */
         }
         th, td {
-            padding: 10px 12px;
-            border: 1px solid #ddd;
-            text-align: right;
-            white-space: nowrap;
+            padding: 12px 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
         }
         th {
-            background-color: #00897b;
+            background-color: #007bff;
             color: white;
             font-weight: bold;
-            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
         tr:nth-child(even) {
-            background-color: #e0f2f1;
+            background-color: #f9f9f9;
         }
-        td:first-child {
-            text-align: center;
-            font-weight: bold;
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        td:first-child, th:first-child {
+            border-left: none;
+        }
+        td:last-child, th:last-child {
+            border-right: none;
         }
         .team-name {
             text-align: left;
-            font-weight: bold;
-        }
-        .rate-cell {
-            font-weight: bold;
-            color: #c62828;
-            font-variant-numeric: tabular-nums;
-        }
-        /* 対戦成績表用のスタイル */
-        .head-team {
-            background-color: #e0e0e0;
-            text-align: center;
-            font-weight: bold;
-        }
-        .match-score {
-            text-align: center;
             font-weight: 500;
+            color: #0056b3;
         }
-        .win-over {
-            color: #00796b;
+        .win-loss {
             font-weight: bold;
+        }
+        caption {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #007bff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
 
-    <h2>📊 2025年6月24日時点 プロ野球 全12球団 順位・成績</h2>
-    <p>（注: 試合数が18試合のため、主に交流戦の結果や、リーグ内での対戦カードが少ない時期の成績を示しています。）</p>
+    <caption>プロ野球 順位表</caption>
     <table>
         <thead>
             <tr>
                 <th>順位</th>
-                <th class="team-name">チーム名</th>
+                <th>チーム名</th>
                 <th>試合</th>
                 <th>勝利</th>
                 <th>敗戦</th>
@@ -94,226 +86,760 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td>1</td><td class="team-name">ソフトバンク</td><td>18</td><td>12</td><td>5</td><td>1</td><td class="rate-cell">.706</td><td>-</td><td>0</td><td>79</td><td>42</td><td>10</td><td>10</td><td class="rate-cell">.256</td><td class="rate-cell">2.20</td><td>8</td></tr>
-            <tr><td>2</td><td class="team-name">日本ハム</td><td>18</td><td>11</td><td>7</td><td>0</td><td class="rate-cell">.611</td><td>1.5</td><td>0</td><td>64</td><td>50</td><td>15</td><td>10</td><td class="rate-cell">.261</td><td class="rate-cell">2.64</td><td>6</td></tr>
-            <tr><td>3</td><td class="team-name">オリックス</td><td>18</td><td>11</td><td>7</td><td>0</td><td class="rate-cell">.611</td><td>0</td><td>0</td><td>68</td><td>64</td><td>7</td><td>8</td><td class="rate-cell">.262</td><td class="rate-cell">3.35</td><td>12</td></tr>
-            <tr><td>4</td><td class="team-name">西武</td><td>18</td><td>10</td><td>8</td><td>0</td><td class="rate-cell">.556</td><td>1</td><td>0</td><td>40</td><td>44</td><td>3</td><td>10</td><td class="rate-cell">.239</td><td class="rate-cell">2.26</td><td>8</td></tr>
-            <tr><td>5</td><td class="team-name">ロッテ</td><td>18</td><td>10</td><td>8</td><td>0</td><td class="rate-cell">.556</td><td>0</td><td>0</td><td>61</td><td>68</td><td>11</td><td>12</td><td class="rate-cell">.243</td><td class="rate-cell">3.64</td><td>6</td></tr>
-            <tr><td>6</td><td class="team-name">楽天</td><td>18</td><td>9</td><td>8</td><td>1</td><td class="rate-cell">.529</td><td>0.5</td><td>0</td><td>51</td><td>58</td><td>6</td><td>13</td><td class="rate-cell">.249</td><td class="rate-cell">2.62</td><td>13</td></tr>
-            <tr><td>7</td><td class="team-name">広島</td><td>18</td><td>9</td><td>9</td><td>0</td><td class="rate-cell">.500</td><td>0.5</td><td>0</td><td>74</td><td>75</td><td>11</td><td>17</td><td class="rate-cell">.265</td><td class="rate-cell">3.94</td><td>10</td></tr>
-            <tr><td>8</td><td class="team-name">阪神</td><td>18</td><td>8</td><td>10</td><td>0</td><td class="rate-cell">.444</td><td>1</td><td>0</td><td>58</td><td>40</td><td>12</td><td>19</td><td class="rate-cell">.246</td><td class="rate-cell">1.99</td><td>11</td></tr>
-            <tr><td>9</td><td class="team-name">中日</td><td>18</td><td>8</td><td>10</td><td>0</td><td class="rate-cell">.444</td><td>0</td><td>0</td><td>46</td><td>58</td><td>8</td><td>19</td><td class="rate-cell">.233</td><td class="rate-cell">3.21</td><td>8</td></tr>
-            <tr><td>10</td><td class="team-name">DeNA</td><td>18</td><td>7</td><td>11</td><td>0</td><td class="rate-cell">.389</td><td>1</td><td>0</td><td>53</td><td>59</td><td>13</td><td>10</td><td class="rate-cell">.205</td><td class="rate-cell">3.27</td><td>9</td></tr>
-            <tr><td>11</td><td class="team-name">巨人</td><td>18</td><td>6</td><td>11</td><td>1</td><td class="rate-cell">.353</td><td>0.5</td><td>0</td><td>42</td><td>57</td><td>7</td><td>7</td><td class="rate-cell">.227</td><td class="rate-cell">2.94</td><td>9</td></tr>
-            <tr><td>12</td><td class="team-name">ヤクルト</td><td>18</td><td>5</td><td>12</td><td>1</td><td class="rate-cell">.294</td><td>1</td><td>0</td><td>53</td><td>74</td><td>10</td><td>12</td><td class="rate-cell">.229</td><td class="rate-cell">3.91</td><td>9</td></tr>
-        </tbody>
-    </table>
-
-    <h2>🤝 2025年6月24日時点 チーム別 対戦成績</h2>
-    <p>（注: リーグ内および交流戦の結果が含まれています。一部対戦相手が重複記載されていますが、データ形式に倣いチーム名を省略して整形しました。）</p>
-    <table>
-        <thead>
             <tr>
-                <th class="head-team">チーム名</th>
-                <th class="head-team">ソ</th>
-                <th class="head-team">日</th>
-                <th class="head-team">オ</th>
-                <th class="head-team">西</th>
-                <th class="head-team">ロ</th>
-                <th class="head-team">楽</th>
-                <th class="head-team">広</th>
-                <th class="head-team">神</th>
-                <th class="head-team">中</th>
-                <th class="head-team">De</th>
-                <th class="head-team">巨</th>
-                <th class="head-team">ヤ</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
+                <td>1</td>
                 <td class="team-name">ソフトバンク</td>
-                <td class="match-score">-</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score win-over">3-0(0)</td>
-                <td class="match-score win-over">3-0(0)</td>
-                <td class="match-score">1-1(1)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
+                <td>18</td>
+                <td class="win-loss">12</td>
+                <td class="win-loss">5</td>
+                <td>1</td>
+                <td>.706</td>
+                <td>-</td>
+                <td>0</td>
+                <td>79</td>
+                <td>42</td>
+                <td>10</td>
+                <td>10</td>
+                <td>.256</td>
+                <td>2.20</td>
+                <td>8</td>
             </tr>
             <tr>
+                <td>2</td>
                 <td class="team-name">日本ハム</td>
-                <td class="match-score">2-1(0)</td>
-                <td class="match-score">-</td>
-                <td class="match-score win-over">1-2(0)</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score win-over">3-0(0)</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
+                <td>18</td>
+                <td class="win-loss">11</td>
+                <td class="win-loss">7</td>
+                <td>0</td>
+                <td>.611</td>
+                <td>1.5</td>
+                <td>0</td>
+                <td>64</td>
+                <td>50</td>
+                <td>15</td>
+                <td>10</td>
+                <td>.261</td>
+                <td>2.64</td>
+                <td>6</td>
             </tr>
             <tr>
+                <td>3</td>
                 <td class="team-name">オリックス</td>
-                <td class="match-score">2-1(0)</td>
-                <td class="match-score">0-3(0)</td>
-                <td class="match-score">-</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score win-over">3-0(0)</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
+                <td>18</td>
+                <td class="win-loss">11</td>
+                <td class="win-loss">7</td>
+                <td>0</td>
+                <td>.611</td>
+                <td>0</td>
+                <td>0</td>
+                <td>68</td>
+                <td>64</td>
+                <td>7</td>
+                <td>8</td>
+                <td>.262</td>
+                <td>3.35</td>
+                <td>12</td>
             </tr>
             <tr>
+                <td>4</td>
                 <td class="team-name">西武</td>
-                <td class="match-score">0-3(0)</td>
-                <td class="match-score win-over">3-0(0)</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score">-</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
+                <td>18</td>
+                <td class="win-loss">10</td>
+                <td class="win-loss">8</td>
+                <td>0</td>
+                <td>.556</td>
+                <td>1</td>
+                <td>0</td>
+                <td>40</td>
+                <td>44</td>
+                <td>3</td>
+                <td>10</td>
+                <td>.239</td>
+                <td>2.26</td>
+                <td>8</td>
             </tr>
             <tr>
+                <td>5</td>
                 <td class="team-name">ロッテ</td>
-                <td class="match-score">2-1(0)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score">0-3(0)</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score">-</td>
-                <td class="match-score win-over">3-0(0)</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
+                <td>18</td>
+                <td class="win-loss">10</td>
+                <td class="win-loss">8</td>
+                <td>0</td>
+                <td>.556</td>
+                <td>0</td>
+                <td>0</td>
+                <td>61</td>
+                <td>68</td>
+                <td>11</td>
+                <td>12</td>
+                <td>.243</td>
+                <td>3.64</td>
+                <td>6</td>
             </tr>
             <tr>
+                <td>6</td>
                 <td class="team-name">楽天</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score win-over">3-0(0)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score">-</td>
-                <td class="match-score win-over">2-0(1)</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
+                <td>18</td>
+                <td class="win-loss">9</td>
+                <td class="win-loss">8</td>
+                <td>1</td>
+                <td>.529</td>
+                <td>0.5</td>
+                <td>0</td>
+                <td>51</td>
+                <td>58</td>
+                <td>6</td>
+                <td>13</td>
+                <td>.249</td>
+                <td>2.62</td>
+                <td>13</td>
             </tr>
             <tr>
+                <td>7</td>
                 <td class="team-name">広島</td>
-                <td class="match-score win-over">1-2(0)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score win-over">3-0(0)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
+                <td>18</td>
+                <td class="win-loss">9</td>
+                <td class="win-loss">9</td>
+                <td>0</td>
+                <td>.500</td>
+                <td>0.5</td>
+                <td>0</td>
+                <td>74</td>
+                <td>75</td>
+                <td>11</td>
+                <td>17</td>
+                <td>.265</td>
+                <td>3.94</td>
+                <td>10</td>
             </tr>
             <tr>
+                <td>8</td>
                 <td class="team-name">阪神</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score win-over">3-0(0)</td>
-                <td class="match-score">0-3(0)</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score">0-3(0)</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
+                <td>18</td>
+                <td class="win-loss">8</td>
+                <td class="win-loss">10</td>
+                <td>0</td>
+                <td>.444</td>
+                <td>1</td>
+                <td>0</td>
+                <td>58</td>
+                <td>40</td>
+                <td>12</td>
+                <td>19</td>
+                <td>.246</td>
+                <td>1.99</td>
+                <td>11</td>
             </tr>
             <tr>
+                <td>9</td>
                 <td class="team-name">中日</td>
-                <td class="match-score">0-3(0)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score win-over">3-0(0)</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
+                <td>18</td>
+                <td class="win-loss">8</td>
+                <td class="win-loss">10</td>
+                <td>0</td>
+                <td>.444</td>
+                <td>0</td>
+                <td>0</td>
+                <td>46</td>
+                <td>58</td>
+                <td>8</td>
+                <td>19</td>
+                <td>.233</td>
+                <td>3.21</td>
+                <td>8</td>
             </tr>
             <tr>
+                <td>10</td>
                 <td class="team-name">DeNA</td>
-                <td class="match-score">0-3(0)</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
+                <td>18</td>
+                <td class="win-loss">7</td>
+                <td class="win-loss">11</td>
+                <td>0</td>
+                <td>.389</td>
+                <td>1</td>
+                <td>0</td>
+                <td>53</td>
+                <td>59</td>
+                <td>13</td>
+                <td>10</td>
+                <td>.205</td>
+                <td>3.27</td>
+                <td>9</td>
             </tr>
             <tr>
+                <td>11</td>
                 <td class="team-name">巨人</td>
-                <td class="match-score">1-1(1)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score">0-3(0)</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score">0-3(0)</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
+                <td>18</td>
+                <td class="win-loss">6</td>
+                <td class="win-loss">11</td>
+                <td>1</td>
+                <td>.353</td>
+                <td>0.5</td>
+                <td>0</td>
+                <td>42</td>
+                <td>57</td>
+                <td>7</td>
+                <td>8</td>
+                <td>.227</td>
+                <td>2.94</td>
+                <td>9</td>
             </tr>
             <tr>
+                <td>12</td>
                 <td class="team-name">ヤクルト</td>
-                <td class="match-score win-over">2-1(0)</td>
-                <td class="match-score">0-3(0)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score">1-2(0)</td>
-                <td class="match-score">0-2(1)</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
-                <td class="match-score">-</td>
+                <td>18</td>
+                <td class="win-loss">5</td>
+                <td class="win-loss">12</td>
+                <td>1</td>
+                <td>.294</td>
+                <td>1</td>
+                <td>0</td>
+                <td>53</td>
+                <td>74</td>
+                <td>10</td>
+                <td>12</td>
+                <td>.229</td>
+                <td>3.91</td>
+                <td>9</td>
             </tr>
         </tbody>
     </table>
 
-    <p style="font-size: 0.8em; margin-top: 20px;">* 対戦成績の表記: 勝利 - 敗戦 (引分数)。対戦成績表の右下半分は省略されているため、一部空欄になっています。</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロ野球 対戦成績</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .team-section {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 20px;
+            overflow-x: auto; /* Enable horizontal scrolling for tables */
+        }
+        h2 {
+            color: #007bff;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.8em;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            min-width: 600px; /* Ensure table is wide enough for content */
+        }
+        th, td {
+            padding: 10px 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            white-space: nowrap; /* Prevent headers from wrapping */
+        }
+        td {
+            background-color: #fefefe;
+        }
+        tr:nth-child(even) td {
+            background-color: #f9f9f9;
+        }
+        .team-cell {
+            font-weight: bold;
+            background-color: #e9f5ff; /* Light blue for team names */
+            color: #0056b3;
+            text-align: left;
+        }
+        .score {
+            font-weight: bold;
+            color: #333;
+        }
+        .date-info {
+            text-align: right;
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>プロ野球 対戦成績</h1>
+    <p>対戦成績 ： 勝利 - 敗戦（引分）</p>
+
+    <div class="team-section">
+        <h2>ソフトバンク</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="team-cell">対戦相手</th>
+                    <th>日本ハム</th>
+                    <th>オリックス</th>
+                    <th>西武</th>
+                    <th>ロッテ</th>
+                    <th>楽天</th>
+                    <th>広島</th>
+                    <th>阪神</th>
+                    <th>中日</th>
+                    <th>DeNA</th>
+                    <th>巨人</th>
+                    <th>ヤクルト</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="team-cell">ソフトバンク</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">3 - 0(0)</td>
+                    <td class="score">3 - 0(0)</td>
+                    <td class="score">1 - 1(1)</td>
+                    <td class="score">1 - 2(0)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="team-section">
+        <h2>日本ハム</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="team-cell">対戦相手</th>
+                    <th>ソフトバンク</th>
+                    <th>オリックス</th>
+                    <th>西武</th>
+                    <th>ロッテ</th>
+                    <th>楽天</th>
+                    <th>広島</th>
+                    <th>阪神</th>
+                    <th>中日</th>
+                    <th>DeNA</th>
+                    <th>巨人</th>
+                    <th>ヤクルト</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="team-cell">日本ハム</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">3 - 0(0)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="team-section">
+        <h2>オリックス</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="team-cell">対戦相手</th>
+                    <th>ソフトバンク</th>
+                    <th>日本ハム</th>
+                    <th>西武</th>
+                    <th>ロッテ</th>
+                    <th>楽天</th>
+                    <th>広島</th>
+                    <th>阪神</th>
+                    <th>中日</th>
+                    <th>DeNA</th>
+                    <th>巨人</th>
+                    <th>ヤクルト</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="team-cell">オリックス</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">0 - 3(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">3 - 0(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="team-section">
+        <h2>西武</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="team-cell">対戦相手</th>
+                    <th>ソフトバンク</th>
+                    <th>日本ハム</th>
+                    <th>オリックス</th>
+                    <th>ロッテ</th>
+                    <th>楽天</th>
+                    <th>広島</th>
+                    <th>阪神</th>
+                    <th>中日</th>
+                    <th>DeNA</th>
+                    <th>巨人</th>
+                    <th>ヤクルト</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="team-cell">西武</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">0 - 3(0)</td>
+                    <td class="score">3 - 0(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="team-section">
+        <h2>ロッテ</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="team-cell">対戦相手</th>
+                    <th>ソフトバンク</th>
+                    <th>日本ハム</th>
+                    <th>オリックス</th>
+                    <th>西武</th>
+                    <th>楽天</th>
+                    <th>広島</th>
+                    <th>阪神</th>
+                    <th>中日</th>
+                    <th>DeNA</th>
+                    <th>巨人</th>
+                    <th>ヤクルト</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="team-cell">ロッテ</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">0 - 3(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">3 - 0(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="team-section">
+        <h2>楽天</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="team-cell">対戦相手</th>
+                    <th>ソフトバンク</th>
+                    <th>日本ハム</th>
+                    <th>オリックス</th>
+                    <th>西武</th>
+                    <th>ロッテ</th>
+                    <th>広島</th>
+                    <th>阪神</th>
+                    <th>中日</th>
+                    <th>DeNA</th>
+                    <th>巨人</th>
+                    <th>ヤクルト</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="team-cell">楽天</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">3 - 0(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">2 - 0(1)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="team-section">
+        <h2>広島</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="team-cell">対戦相手</th>
+                    <th>ソフトバンク</th>
+                    <th>日本ハム</th>
+                    <th>オリックス</th>
+                    <th>西武</th>
+                    <th>ロッテ</th>
+                    <th>楽天</th>
+                    <th>阪神</th>
+                    <th>中日</th>
+                    <th>DeNA</th>
+                    <th>巨人</th>
+                    <th>ヤクルト</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="team-cell">広島</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">3 - 0(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="team-section">
+        <h2>阪神</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="team-cell">対戦相手</th>
+                    <th>ソフトバンク</th>
+                    <th>日本ハム</th>
+                    <th>オリックス</th>
+                    <th>西武</th>
+                    <th>ロッテ</th>
+                    <th>楽天</th>
+                    <th>広島</th>
+                    <th>中日</th>
+                    <th>DeNA</th>
+                    <th>巨人</th>
+                    <th>ヤクルト</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="team-cell">阪神</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">3 - 0(0)</td>
+                    <td class="score">0 - 3(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">0 - 3(0)</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="team-section">
+        <h2>中日</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="team-cell">対戦相手</th>
+                    <th>ソフトバンク</th>
+                    <th>日本ハム</th>
+                    <th>オリックス</th>
+                    <th>西武</th>
+                    <th>ロッテ</th>
+                    <th>楽天</th>
+                    <th>広島</th>
+                    <th>阪神</th>
+                    <th>DeNA</th>
+                    <th>巨人</th>
+                    <th>ヤクルト</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="team-cell">中日</td>
+                    <td class="score">0 - 3(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">3 - 0(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="team-section">
+        <h2>DeNA</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="team-cell">対戦相手</th>
+                    <th>ソフトバンク</th>
+                    <th>日本ハム</th>
+                    <th>オリックス</th>
+                    <th>西武</th>
+                    <th>ロッテ</th>
+                    <th>楽天</th>
+                    <th>広島</th>
+                    <th>阪神</th>
+                    <th>中日</th>
+                    <th>巨人</th>
+                    <th>ヤクルト</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="team-cell">DeNA</td>
+                    <td class="score">0 - 3(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="team-section">
+        <h2>巨人</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="team-cell">対戦相手</th>
+                    <th>ソフトバンク</th>
+                    <th>日本ハム</th>
+                    <th>オリックス</th>
+                    <th>西武</th>
+                    <th>ロッテ</th>
+                    <th>楽天</th>
+                    <th>広島</th>
+                    <th>阪神</th>
+                    <th>中日</th>
+                    <th>DeNA</th>
+                    <th>ヤクルト</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="team-cell">巨人</td>
+                    <td class="score">1 - 1(1)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">0 - 3(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">0 - 3(0)</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="team-section">
+        <h2>ヤクルト</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="team-cell">対戦相手</th>
+                    <th>ソフトバンク</th>
+                    <th>日本ハム</th>
+                    <th>オリックス</th>
+                    <th>西武</th>
+                    <th>ロッテ</th>
+                    <th>楽天</th>
+                    <th>広島</th>
+                    <th>阪神</th>
+                    <th>中日</th>
+                    <th>DeNA</th>
+                    <th>巨人</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="team-cell">ヤクルト</td>
+                    <td class="score">2 - 1(0)</td>
+                    <td class="score">0 - 3(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">1 - 2(0)</td>
+                    <td class="score">0 - 2(1)</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                    <td class="score">-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="date-info">2025/6/24 21:53</p>
 
 </body>
 </html>
