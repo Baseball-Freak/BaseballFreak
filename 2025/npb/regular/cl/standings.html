@@ -1,19 +1,292 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>2025 セ・リーグ順位表</title>
+    <meta charset="UTF-8">
+    <title>2025年 セントラル・リーグ 最終成績</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f8f8f8;
+            padding: 20px;
+            color: #333;
+        }
+        h2 {
+            color: #004d40; /* 濃い緑 */
+            border-bottom: 2px solid #004d40;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background-color: #ffffff;
+            font-size: 0.95em;
+        }
+        th, td {
+            padding: 10px 12px;
+            border: 1px solid #ddd;
+            text-align: right;
+            white-space: nowrap;
+        }
+        th {
+            background-color: #00897b; /* 緑 */
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        tr:nth-child(even) {
+            background-color: #e0f2f1; /* 薄い緑 */
+        }
+        td:first-child {
+            text-align: center;
+            font-weight: bold;
+        }
+        .team-name {
+            text-align: left;
+            font-weight: bold;
+        }
+        .champion {
+            background-color: #ffcc80; /* オレンジ */
+            color: #333;
+        }
+        .rate-cell {
+            font-weight: bold;
+            color: #c62828; /* 赤 */
+            font-variant-numeric: tabular-nums;
+        }
+        /* 対戦成績表用のスタイル */
+        .head-team {
+            background-color: #e0e0e0;
+            text-align: center;
+            font-weight: bold;
+        }
+        .match-score {
+            text-align: center;
+            font-weight: 500;
+        }
+        .win-over {
+            color: #00796b; /* 勝ち越しを強調 */
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <h1>2025 セ・リーグ順位表</h1>
-  <table>
-    <thead>
-      <tr><th>順位</th><th>チーム</th><th>勝</th><th>敗</th><th>引分</th><th>勝率</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>1</td><td>阪神</td><td>80</td><td>60</td><td>3</td><td>.571</td></tr>
-    </tbody>
-  </table>
-  <div class="npb-updated">更新日：2025年10月31日</div>
+
+    <h2>🏆 2025年 セントラル・リーグ 最終順位・成績</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>順位</th>
+                <th class="team-name">チーム名</th>
+                <th>試合</th>
+                <th>勝利</th>
+                <th>敗戦</th>
+                <th>引分</th>
+                <th>勝率</th>
+                <th>勝差</th>
+                <th>残試合</th>
+                <th>得点</th>
+                <th>失点</th>
+                <th>本塁打</th>
+                <th>盗塁</th>
+                <th>打率</th>
+                <th>防御率</th>
+                <th>失策</th>
+                <th>優勝</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="champion">
+                <td>1</td>
+                <td class="team-name">阪神</td>
+                <td>143</td>
+                <td>85</td>
+                <td>54</td>
+                <td>4</td>
+                <td class="rate-cell">.612</td>
+                <td>-</td>
+                <td>0</td>
+                <td>496</td>
+                <td>352</td>
+                <td>93</td>
+                <td>100</td>
+                <td class="rate-cell">.245</td>
+                <td class="rate-cell">2.21</td>
+                <td>57</td>
+                <td>優勝</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="team-name">DeNA</td>
+                <td>143</td>
+                <td>71</td>
+                <td>66</td>
+                <td>6</td>
+                <td class="rate-cell">.518</td>
+                <td>13.0</td>
+                <td>0</td>
+                <td>510</td>
+                <td>456</td>
+                <td>110</td>
+                <td>66</td>
+                <td class="rate-cell">.247</td>
+                <td>2.94</td>
+                <td>69</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="team-name">巨人</td>
+                <td>143</td>
+                <td>70</td>
+                <td>69</td>
+                <td>4</td>
+                <td class="rate-cell">.504</td>
+                <td>1.5</td>
+                <td>0</td>
+                <td>463</td>
+                <td>461</td>
+                <td>96</td>
+                <td>53</td>
+                <td class="rate-cell">.250</td>
+                <td>2.95</td>
+                <td>78</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="team-name">中日</td>
+                <td>143</td>
+                <td>63</td>
+                <td>78</td>
+                <td>2</td>
+                <td class="rate-cell">.447</td>
+                <td>8.0</td>
+                <td>0</td>
+                <td>403</td>
+                <td>463</td>
+                <td>83</td>
+                <td>80</td>
+                <td class="rate-cell">.232</td>
+                <td>2.97</td>
+                <td>65</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="team-name">広島</td>
+                <td>143</td>
+                <td>59</td>
+                <td>79</td>
+                <td>5</td>
+                <td class="rate-cell">.428</td>
+                <td>2.5</td>
+                <td>0</td>
+                <td>441</td>
+                <td>497</td>
+                <td>77</td>
+                <td>157</td>
+                <td class="rate-cell">.246</td>
+                <td>3.20</td>
+                <td>75</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td class="team-name">ヤクルト</td>
+                <td>143</td>
+                <td>57</td>
+                <td>79</td>
+                <td>7</td>
+                <td class="rate-cell">.419</td>
+                <td>1.0</td>
+                <td>0</td>
+                <td>435</td>
+                <td>649</td>
+                <td>90</td>
+                <td>61</td>
+                <td class="rate-cell">.234</td>
+                <td>3.59</td>
+                <td>72</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>🤝 2025年 セントラル・リーグ 対戦成績</h2>
+    <table>
+        <thead>
+            <tr>
+                <th class="head-team">チーム名</th>
+                <th class="head-team">阪神</th>
+                <th class="head-team">DeNA</th>
+                <th class="head-team">巨人</th>
+                <th class="head-team">中日</th>
+                <th class="head-team">広島</th>
+                <th class="head-team">ヤクルト</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="team-name">阪神</td>
+                <td class="match-score">-</td>
+                <td class="match-score win-over">14 - 8 (3)</td>
+                <td class="match-score win-over">17 - 8 (0)</td>
+                <td class="match-score">12 - 13 (0)</td>
+                <td class="match-score win-over">19 - 6 (0)</td>
+                <td class="match-score win-over">15 - 9 (1)</td>
+            </tr>
+            <tr>
+                <td class="team-name">DeNA</td>
+                <td class="match-score">8 - 14 (3)</td>
+                <td class="match-score">-</td>
+                <td class="match-score">9 - 15 (1)</td>
+                <td class="match-score win-over">17 - 8 (0)</td>
+                <td class="match-score win-over">14 - 10 (1)</td>
+                <td class="match-score win-over">16 - 8 (1)</td>
+            </tr>
+            <tr>
+                <td class="team-name">巨人</td>
+                <td class="match-score">8 - 17 (0)</td>
+                <td class="match-score win-over">15 - 9 (1)</td>
+                <td class="match-score">-</td>
+                <td class="match-score win-over">14 - 11 (0)</td>
+                <td class="match-score">11 - 13 (1)</td>
+                <td class="match-score win-over">16 - 8 (1)</td>
+            </tr>
+            <tr>
+                <td class="team-name">中日</td>
+                <td class="match-score win-over">13 - 12 (0)</td>
+                <td class="match-score">8 - 17 (0)</td>
+                <td class="match-score">11 - 14 (0)</td>
+                <td class="match-score">-</td>
+                <td class="match-score">11 - 13 (1)</td>
+                <td class="match-score">12 - 12 (1)</td>
+            </tr>
+            <tr>
+                <td class="team-name">広島</td>
+                <td class="match-score">6 - 19 (0)</td>
+                <td class="match-score">10 - 14 (1)</td>
+                <td class="match-score win-over">13 - 11 (1)</td>
+                <td class="match-score win-over">13 - 11 (1)</td>
+                <td class="match-score">-</td>
+                <td class="match-score">8 - 15 (2)</td>
+            </tr>
+            <tr>
+                <td class="team-name">ヤクルト</td>
+                <td class="match-score">9 - 15 (1)</td>
+                <td class="match-score">8 - 16 (1)</td>
+                <td class="match-score">8 - 16 (1)</td>
+                <td class="match-score">12 - 12 (1)</td>
+                <td class="match-score win-over">15 - 8 (2)</td>
+                <td class="match-score">-</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="font-size: 0.8em; margin-top: 20px;">* 対戦成績の表記: 勝利 - 敗戦 (引分数)</p>
+
 </body>
 </html>
