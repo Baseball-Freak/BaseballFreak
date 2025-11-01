@@ -1,20 +1,292 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>2025 パ・リーグ順位表</title>
-  <link rel="stylesheet" href="../../../assets/style.css">
+    <meta charset="UTF-8">
+    <title>2025年 パシフィック・リーグ 最終成績</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f8f8f8;
+            padding: 20px;
+            color: #333;
+        }
+        h2 {
+            color: #004d40; /* 濃い緑 */
+            border-bottom: 2px solid #004d40;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background-color: #ffffff;
+            font-size: 0.95em;
+        }
+        th, td {
+            padding: 10px 12px;
+            border: 1px solid #ddd;
+            text-align: right;
+            white-space: nowrap;
+        }
+        th {
+            background-color: #00897b; /* 緑 */
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        tr:nth-child(even) {
+            background-color: #e0f2f1; /* 薄い緑 */
+        }
+        td:first-child {
+            text-align: center;
+            font-weight: bold;
+        }
+        .team-name {
+            text-align: left;
+            font-weight: bold;
+        }
+        .champion {
+            background-color: #ffcc80; /* オレンジ */
+            color: #333;
+        }
+        .rate-cell {
+            font-weight: bold;
+            color: #c62828; /* 赤 */
+            font-variant-numeric: tabular-nums;
+        }
+        /* 対戦成績表用のスタイル */
+        .head-team {
+            background-color: #e0e0e0;
+            text-align: center;
+            font-weight: bold;
+        }
+        .match-score {
+            text-align: center;
+            font-weight: 500;
+        }
+        .win-over {
+            color: #00796b; /* 勝ち越しを強調 */
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <h1>2025 パ・リーグ順位表</h1>
-  <table>
-    <thead>
-      <tr><th>順位</th><th>チーム</th><th>勝</th><th>敗</th><th>引分</th><th>勝率</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>1</td><td>オリックス</td><td>82</td><td>58</td><td>3</td><td>.586</td></tr>
-    </tbody>
-  </table>
-  <div class="npb-updated">更新日：2025年10月31日</div>
+
+    <h2>🏆 2025年 パシフィック・リーグ 最終順位・成績</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>順位</th>
+                <th class="team-name">チーム名</th>
+                <th>試合</th>
+                <th>勝利</th>
+                <th>敗戦</th>
+                <th>引分</th>
+                <th>勝率</th>
+                <th>勝差</th>
+                <th>残試合</th>
+                <th>得点</th>
+                <th>失点</th>
+                <th>本塁打</th>
+                <th>盗塁</th>
+                <th>打率</th>
+                <th>防御率</th>
+                <th>失策</th>
+                <th>優勝</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="champion">
+                <td>1</td>
+                <td class="team-name">ソフトバンク</td>
+                <td>143</td>
+                <td>87</td>
+                <td>52</td>
+                <td>4</td>
+                <td class="rate-cell">.626</td>
+                <td>-</td>
+                <td>0</td>
+                <td>551</td>
+                <td>389</td>
+                <td>101</td>
+                <td>98</td>
+                <td class="rate-cell">.257</td>
+                <td class="rate-cell">2.39</td>
+                <td>77</td>
+                <td>優勝</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="team-name">日本ハム</td>
+                <td>143</td>
+                <td>83</td>
+                <td>57</td>
+                <td>3</td>
+                <td class="rate-cell">.593</td>
+                <td>4.5</td>
+                <td>0</td>
+                <td>548</td>
+                <td>409</td>
+                <td>129</td>
+                <td>79</td>
+                <td class="rate-cell">.248</td>
+                <td class="rate-cell">2.53</td>
+                <td>73</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="team-name">オリックス</td>
+                <td>143</td>
+                <td>74</td>
+                <td>66</td>
+                <td>3</td>
+                <td class="rate-cell">.529</td>
+                <td>9.0</td>
+                <td>0</td>
+                <td>502</td>
+                <td>519</td>
+                <td>100</td>
+                <td>58</td>
+                <td class="rate-cell">.255</td>
+                <td class="rate-cell">3.37</td>
+                <td>64</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="team-name">楽天</td>
+                <td>143</td>
+                <td>67</td>
+                <td>74</td>
+                <td>2</td>
+                <td class="rate-cell">.475</td>
+                <td>7.5</td>
+                <td>0</td>
+                <td>446</td>
+                <td>526</td>
+                <td>70</td>
+                <td>110</td>
+                <td class="rate-cell">.244</td>
+                <td class="rate-cell">3.37</td>
+                <td>69</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="team-name">西武</td>
+                <td>143</td>
+                <td>63</td>
+                <td>77</td>
+                <td>3</td>
+                <td class="rate-cell">.450</td>
+                <td>3.5</td>
+                <td>0</td>
+                <td>410</td>
+                <td>465</td>
+                <td>80</td>
+                <td>91</td>
+                <td class="rate-cell">.232</td>
+                <td class="rate-cell">2.99</td>
+                <td>65</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td class="team-name">ロッテ</td>
+                <td>143</td>
+                <td>56</td>
+                <td>84</td>
+                <td>3</td>
+                <td class="rate-cell">.400</td>
+                <td>7.0</td>
+                <td>0</td>
+                <td>441</td>
+                <td>553</td>
+                <td>73</td>
+                <td>68</td>
+                <td class="rate-cell">.241</td>
+                <td class="rate-cell">3.60</td>
+                <td>67</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>🤝 2025年 パシフィック・リーグ 対戦成績</h2>
+    <table>
+        <thead>
+            <tr>
+                <th class="head-team">チーム名</th>
+                <th class="head-team">ソフトバンク</th>
+                <th class="head-team">日本ハム</th>
+                <th class="head-team">オリックス</th>
+                <th class="head-team">楽天</th>
+                <th class="head-team">西武</th>
+                <th class="head-team">ロッテ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="team-name">ソフトバンク</td>
+                <td class="match-score">-</td>
+                <td class="match-score win-over">13 - 12 (0)</td>
+                <td class="match-score win-over">16 - 7 (2)</td>
+                <td class="match-score win-over">14 - 11 (0)</td>
+                <td class="match-score win-over">17 - 8 (0)</td>
+                <td class="match-score win-over">15 - 9 (1)</td>
+            </tr>
+            <tr>
+                <td class="team-name">日本ハム</td>
+                <td class="match-score">12 - 13 (0)</td>
+                <td class="match-score">-</td>
+                <td class="match-score">12 - 12 (1)</td>
+                <td class="match-score win-over">16 - 8 (1)</td>
+                <td class="match-score win-over">15 - 9 (1)</td>
+                <td class="match-score win-over">17 - 8 (0)</td>
+            </tr>
+            <tr>
+                <td class="team-name">オリックス</td>
+                <td class="match-score">7 - 16 (2)</td>
+                <td class="match-score">12 - 12 (1)</td>
+                <td class="match-score">-</td>
+                <td class="match-score win-over">15 - 10 (0)</td>
+                <td class="match-score win-over">14 - 11 (0)</td>
+                <td class="match-score win-over">15 - 10 (0)</td>
+            </tr>
+            <tr>
+                <td class="team-name">楽天</td>
+                <td class="match-score">11 - 14 (0)</td>
+                <td class="match-score">8 - 16 (1)</td>
+                <td class="match-score">10 - 15 (0)</td>
+                <td class="match-score">-</td>
+                <td class="match-score win-over">13 - 12 (0)</td>
+                <td class="match-score win-over">16 - 9 (0)</td>
+            </tr>
+            <tr>
+                <td class="team-name">西武</td>
+                <td class="match-score">8 - 17 (0)</td>
+                <td class="match-score">9 - 15 (1)</td>
+                <td class="match-score">11 - 14 (0)</td>
+                <td class="match-score">12 - 13 (0)</td>
+                <td class="match-score">-</td>
+                <td class="match-score win-over">13 - 10 (2)</td>
+            </tr>
+            <tr>
+                <td class="team-name">ロッテ</td>
+                <td class="match-score">9 - 15 (1)</td>
+                <td class="match-score">8 - 17 (0)</td>
+                <td class="match-score">10 - 15 (0)</td>
+                <td class="match-score">9 - 16 (0)</td>
+                <td class="match-score">10 - 13 (2)</td>
+                <td class="match-score">-</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="font-size: 0.8em; margin-top: 20px;">* 対戦成績の表記: 勝利 - 敗戦 (引分数)</p>
+
 </body>
 </html>
