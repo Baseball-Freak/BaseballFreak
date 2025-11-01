@@ -1,1 +1,510 @@
-pitcher
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>パ・リーグ投手成績</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f7f6;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #ffffff;
+            font-size: 0.9em;
+        }
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        th, td {
+            padding: 8px 10px;
+            text-align: right;
+            border: 1px solid #dddddd;
+        }
+        th {
+            background-color: #00796b; /* 深い緑 */
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        td:first-child, td:nth-child(2) {
+            text-align: center;
+        }
+        .team-wide {
+            text-align: left;
+            white-space: nowrap;
+        }
+        /* 防御率、勝率、WHIPを目立たせる */
+        td:nth-child(3), td:nth-child(13), td:nth-child(28) {
+            font-weight: bold;
+            color: #d32f2f; /* 赤 */
+        }
+        .rank {
+            background-color: #e0f2f1; /* 薄い緑 */
+        }
+        .player-name {
+            font-weight: 600;
+        }
+        .rate {
+            /* 投球回、防御率などの小数点以下の数字を揃える */
+            font-variant-numeric: tabular-nums;
+        }
+    </style>
+</head>
+<body>
+
+    <caption>2025年10月 パシフィック・リーグ 投手成績 (先発投手)</caption>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="rank">順位</th>
+                <th class="team-wide">選手名</th>
+                <th>防御率</th>
+                <th>登板</th>
+                <th>先発</th>
+                <th>完投</th>
+                <th>完封</th>
+                <th>QS</th>
+                <th>勝利</th>
+                <th>敗戦</th>
+                <th>ホールド</th>
+                <th>HP</th>
+                <th>セーブ</th>
+                <th>勝率</th>
+                <th>投球回</th>
+                <th>被安打</th>
+                <th>被本塁打</th>
+                <th>奪三振</th>
+                <th>奪三振率</th>
+                <th>与四球</th>
+                <th>与死球</th>
+                <th>暴投</th>
+                <th>ボーク</th>
+                <th>失点</th>
+                <th>自責点</th>
+                <th>被打率</th>
+                <th>K/BB</th>
+                <th>QS率</th>
+                <th>WHIP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="rank">1</td>
+                <td class="team-wide player-name">モイネロ (ソ)</td>
+                <td class="rate">1.46</td>
+                <td>24</td>
+                <td>24</td>
+                <td>3</td>
+                <td>2</td>
+                <td>19</td>
+                <td>12</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="rate">.800</td>
+                <td class="rate">167</td>
+                <td>112</td>
+                <td>10</td>
+                <td>172</td>
+                <td class="rate">9.27</td>
+                <td>42</td>
+                <td>3</td>
+                <td>1</td>
+                <td>0</td>
+                <td>29</td>
+                <td>27</td>
+                <td class="rate">.192</td>
+                <td class="rate">4.10</td>
+                <td class="rate">79.2</td>
+                <td class="rate">0.92</td>
+            </tr>
+            <tr>
+                <td class="rank">2</td>
+                <td class="team-wide player-name">北山 (日)</td>
+                <td class="rate">1.63</td>
+                <td>22</td>
+                <td>22</td>
+                <td>4</td>
+                <td>0</td>
+                <td>18</td>
+                <td>9</td>
+                <td>5</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="rate">.643</td>
+                <td class="rate">149</td>
+                <td>112</td>
+                <td>7</td>
+                <td>143</td>
+                <td class="rate">8.64</td>
+                <td>45</td>
+                <td>4</td>
+                <td>2</td>
+                <td>0</td>
+                <td>37</td>
+                <td>27</td>
+                <td class="rate">.208</td>
+                <td class="rate">3.18</td>
+                <td class="rate">81.8</td>
+                <td class="rate">1.05</td>
+            </tr>
+            <tr>
+                <td class="rank">3</td>
+                <td class="team-wide player-name">大関 (ソ)</td>
+                <td class="rate">1.66</td>
+                <td>24</td>
+                <td>24</td>
+                <td>0</td>
+                <td>0</td>
+                <td>17</td>
+                <td>13</td>
+                <td>5</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="rate">.722</td>
+                <td class="rate">146.2</td>
+                <td>107</td>
+                <td>1</td>
+                <td>97</td>
+                <td class="rate">5.95</td>
+                <td>35</td>
+                <td>5</td>
+                <td>0</td>
+                <td>0</td>
+                <td>36</td>
+                <td>27</td>
+                <td class="rate">.198</td>
+                <td class="rate">2.77</td>
+                <td class="rate">70.8</td>
+                <td class="rate">0.97</td>
+            </tr>
+            <tr>
+                <td class="rank">4</td>
+                <td class="team-wide player-name">今井 (西)</td>
+                <td class="rate">1.92</td>
+                <td>24</td>
+                <td>24</td>
+                <td>5</td>
+                <td>3</td>
+                <td>16</td>
+                <td>10</td>
+                <td>5</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="rate">.667</td>
+                <td class="rate">163.2</td>
+                <td>101</td>
+                <td>6</td>
+                <td>178</td>
+                <td class="rate">9.79</td>
+                <td>45</td>
+                <td>1</td>
+                <td>0</td>
+                <td>3</td>
+                <td>38</td>
+                <td>35</td>
+                <td class="rate">.176</td>
+                <td class="rate">3.96</td>
+                <td class="rate">66.7</td>
+                <td class="rate">0.89</td>
+            </tr>
+            <tr>
+                <td class="rank">5</td>
+                <td class="team-wide player-name">宮城 (オ)</td>
+                <td class="rate">2.39</td>
+                <td>23</td>
+                <td>22</td>
+                <td>0</td>
+                <td>0</td>
+                <td>18</td>
+                <td>7</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="rate">.700</td>
+                <td class="rate">150.1</td>
+                <td>135</td>
+                <td>6</td>
+                <td>165</td>
+                <td class="rate">9.88</td>
+                <td>30</td>
+                <td>6</td>
+                <td>3</td>
+                <td>0</td>
+                <td>41</td>
+                <td>40</td>
+                <td class="rate">.236</td>
+                <td class="rate">5.50</td>
+                <td class="rate">81.8</td>
+                <td class="rate">1.10</td>
+            </tr>
+            <tr>
+                <td class="rank">6</td>
+                <td class="team-wide player-name">九里 (オ)</td>
+                <td class="rate">2.41</td>
+                <td>25</td>
+                <td>25</td>
+                <td>2</td>
+                <td>1</td>
+                <td>18</td>
+                <td>11</td>
+                <td>8</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="rate">.579</td>
+                <td class="rate">164.1</td>
+                <td>155</td>
+                <td>7</td>
+                <td>114</td>
+                <td class="rate">6.24</td>
+                <td>48</td>
+                <td>6</td>
+                <td>1</td>
+                <td>2</td>
+                <td>49</td>
+                <td>44</td>
+                <td class="rate">.252</td>
+                <td class="rate">2.38</td>
+                <td class="rate">72.0</td>
+                <td class="rate">1.24</td>
+            </tr>
+            <tr>
+                <td class="rank">7</td>
+                <td class="team-wide player-name">伊藤 (日)</td>
+                <td class="rate">2.52</td>
+                <td>27</td>
+                <td>27</td>
+                <td>6</td>
+                <td>1</td>
+                <td>22</td>
+                <td>14</td>
+                <td>8</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>.636</td>
+                <td class="rate">196.2</td>
+                <td>179</td>
+                <td>15</td>
+                <td>195</td>
+                <td class="rate">8.92</td>
+                <td>29</td>
+                <td>8</td>
+                <td>4</td>
+                <td>0</td>
+                <td>60</td>
+                <td>55</td>
+                <td class="rate">.241</td>
+                <td class="rate">6.72</td>
+                <td class="rate">81.5</td>
+                <td class="rate">1.06</td>
+            </tr>
+            <tr>
+                <td class="rank">8</td>
+                <td class="team-wide player-name">隅田 (西)</td>
+                <td class="rate">2.59</td>
+                <td>23</td>
+                <td>23</td>
+                <td>3</td>
+                <td>1</td>
+                <td>17</td>
+                <td>10</td>
+                <td>10</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="rate">.500</td>
+                <td class="rate">159.2</td>
+                <td>142</td>
+                <td>12</td>
+                <td>149</td>
+                <td class="rate">8.40</td>
+                <td>34</td>
+                <td>2</td>
+                <td>3</td>
+                <td>0</td>
+                <td>47</td>
+                <td>46</td>
+                <td class="rate">.236</td>
+                <td class="rate">4.38</td>
+                <td class="rate">73.9</td>
+                <td class="rate">1.10</td>
+            </tr>
+            <tr>
+                <td class="rank">9</td>
+                <td class="team-wide player-name">種市 (ロ)</td>
+                <td class="rate">2.63</td>
+                <td>24</td>
+                <td>24</td>
+                <td>2</td>
+                <td>0</td>
+                <td>16</td>
+                <td>9</td>
+                <td>8</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="rate">.529</td>
+                <td class="rate">160.2</td>
+                <td>134</td>
+                <td>13</td>
+                <td>161</td>
+                <td class="rate">9.02</td>
+                <td>50</td>
+                <td>6</td>
+                <td>9</td>
+                <td>0</td>
+                <td>55</td>
+                <td>47</td>
+                <td class="rate">.225</td>
+                <td class="rate">3.22</td>
+                <td class="rate">66.7</td>
+                <td class="rate">1.15</td>
+            </tr>
+            <tr>
+                <td class="rank">10</td>
+                <td class="team-wide player-name">上沢 (ソ)</td>
+                <td class="rate">2.74</td>
+                <td>23</td>
+                <td>23</td>
+                <td>1</td>
+                <td>0</td>
+                <td>17</td>
+                <td>12</td>
+                <td>6</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="rate">.667</td>
+                <td class="rate">144.2</td>
+                <td>113</td>
+                <td>12</td>
+                <td>115</td>
+                <td class="rate">7.15</td>
+                <td>36</td>
+                <td>5</td>
+                <td>0</td>
+                <td>0</td>
+                <td>52</td>
+                <td>44</td>
+                <td class="rate">.214</td>
+                <td class="rate">3.19</td>
+                <td class="rate">73.9</td>
+                <td class="rate">1.03</td>
+            </tr>
+            <tr>
+                <td class="rank">11</td>
+                <td class="team-wide player-name">有原 (ソ)</td>
+                <td class="rate">3.03</td>
+                <td>26</td>
+                <td>26</td>
+                <td>1</td>
+                <td>1</td>
+                <td>20</td>
+                <td>14</td>
+                <td>9</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="rate">.609</td>
+                <td class="rate">175</td>
+                <td>167</td>
+                <td>10</td>
+                <td>121</td>
+                <td class="rate">6.22</td>
+                <td>41</td>
+                <td>6</td>
+                <td>2</td>
+                <td>0</td>
+                <td>67</td>
+                <td>59</td>
+                <td class="rate">.255</td>
+                <td class="rate">2.95</td>
+                <td class="rate">76.9</td>
+                <td class="rate">1.19</td>
+            </tr>
+            <tr>
+                <td class="rank">12</td>
+                <td class="team-wide player-name">髙橋光成 (西)</td>
+                <td class="rate">3.04</td>
+                <td>24</td>
+                <td>24</td>
+                <td>0</td>
+                <td>0</td>
+                <td>15</td>
+                <td>8</td>
+                <td>9</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="rate">.471</td>
+                <td class="rate">148</td>
+                <td>141</td>
+                <td>10</td>
+                <td>88</td>
+                <td class="rate">5.35</td>
+                <td>41</td>
+                <td>6</td>
+                <td>7</td>
+                <td>1</td>
+                <td>56</td>
+                <td>50</td>
+                <td class="rate">.251</td>
+                <td class="rate">2.15</td>
+                <td class="rate">62.5</td>
+                <td class="rate">1.23</td>
+            </tr>
+            <tr>
+                <td class="rank">13</td>
+                <td class="team-wide player-name">小島 (ロ)</td>
+                <td class="rate">3.72</td>
+                <td>24</td>
+                <td>24</td>
+                <td>0</td>
+                <td>0</td>
+                <td>12</td>
+                <td>8</td>
+                <td>10</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="rate">.444</td>
+                <td class="rate">145</td>
+                <td>144</td>
+                <td>20</td>
+                <td>92</td>
+                <td class="rate">5.71</td>
+                <td>54</td>
+                <td>3</td>
+                <td>3</td>
+                <td>0</td>
+                <td>67</td>
+                <td>60</td>
+                <td class="rate">.261</td>
+                <td class="rate">1.70</td>
+                <td class="rate">50.0</td>
+                <td class="rate">1.37</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
