@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <title>NPBスケジュール | Baseball Freak</title>
     <style>
-        /* 1. フォントをメイリオ、サイズを12pxに */
+        /* 1. フォントをメイリオ、サイズを12pxに設定 */
         body {
             font-family: "Meiryo", "メイリオ", sans-serif;
             font-size: 12px;
@@ -13,41 +13,42 @@
             color: #333;
         }
 
-        /* リーグ見出しのスタイル */
-        /* セ・リーグ (CL) スタイルの調整 */
+        /* 2. リーグカラーとデザインの適用 */
+        
+        /* セ・リーグ (CL) スタイル */
         .cl-schedule {
             margin-top: 20px;
             margin-bottom: 10px;
             padding: 5px 10px;
-            /* セ・リーグのテーマカラー (例: 赤系) */
+            /* 赤系のテーマカラー */
             background-color: #f7e0e0;
-            border-left: 5px solid #d9534f; /* 赤で強調 */
+            border-left: 5px solid #d9534f; 
             color: #d9534f;
             font-size: 16px; 
             font-weight: bold;
         }
 
-        /* パ・リーグ (PL) スタイルの調整 */
+        /* パ・リーグ (PL) スタイル */
         .pl-schedule {
             margin-top: 30px; 
             margin-bottom: 10px;
             padding: 5px 10px;
-            /* パ・リーグのテーマカラー (例: 青系) */
+            /* 青系のテーマカラー */
             background-color: #e0eaf7;
-            border-left: 5px solid #337ab7; /* 青で強調 */
+            border-left: 5px solid #337ab7; 
             color: #337ab7;
             font-size: 16px;
             font-weight: bold;
         }
 
-        /* 📐 iframeの縦横可変（レスポンシブ）設定 */
+        /* 3. iframeの縦横可変（レスポンシブ）設定 - 高さは幅の75% */
         
         /* iframeのラッパー要素：高さを幅のパーセンテージで確保 */
         .iframe-container {
             position: relative;
             width: 100%;
-            /* ここで縦横比を決定: padding-top: 150% = 高さ / 幅 = 1.5 (縦長) */
-            padding-top: 150%; 
+            /* 高さを幅の75%に設定 (前回の設定150%の半分) */
+            padding-top: 75%; 
             margin-bottom: 20px;
             overflow: hidden; 
         }
