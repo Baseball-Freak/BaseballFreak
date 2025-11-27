@@ -1,25 +1,79 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>NPBスケジュール（セ・リーグ／パ・リーグ） | Baseball Freak</title>
-  <style>
-    body {font-family: "Segoe UI", sans-serif; line-height: 1.8; padding: 20px;}
-    h1 {color: #222;}
-    h2 {background: #333; color: #fff; padding: 8px 12px; border-radius: 4px;}
-    a {color: #0066cc; text-decoration: none;}
-    a:hover {text-decoration: underline;}
-  </style>
+    <meta charset="UTF-8">
+    <title>NPBスケジュール | Baseball Freak</title>
+    <style>
+        /* 1. フォントをメイリオ、サイズを12pxに */
+        body {
+            font-family: "Meiryo", "メイリオ", sans-serif;
+            font-size: 12px;
+            line-height: 1.6;
+            padding: 10px;
+            color: #333;
+        }
+
+        /* リーグ見出しのスタイル */
+        /* セ・リーグ (CL) スタイルの調整 */
+        .cl-schedule {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            /* セ・リーグのテーマカラー (例: 赤系) */
+            background-color: #f7e0e0;
+            border-left: 5px solid #d9534f; /* 赤で強調 */
+            color: #d9534f;
+            font-size: 16px; 
+            font-weight: bold;
+        }
+
+        /* パ・リーグ (PL) スタイルの調整 */
+        .pl-schedule {
+            margin-top: 30px; 
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            /* パ・リーグのテーマカラー (例: 青系) */
+            background-color: #e0eaf7;
+            border-left: 5px solid #337ab7; /* 青で強調 */
+            color: #337ab7;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* 📐 iframeの縦横可変（レスポンシブ）設定 */
+        
+        /* iframeのラッパー要素：高さを幅のパーセンテージで確保 */
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            /* ここで縦横比を決定: padding-top: 150% = 高さ / 幅 = 1.5 (縦長) */
+            padding-top: 150%; 
+            margin-bottom: 20px;
+            overflow: hidden; 
+        }
+
+        /* iframe自体：ラッパー要素内に完全に広がるように設定 */
+        .schedule-frame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #ccc;
+        }
+    </style>
 </head>
 <body>
 
-<h1>NPBスケジュール（セ・リーグ／パ・リーグ）</h1>
+    <div class="cl-schedule">セ・リーグ (CL)</div>
+    <div class="iframe-container">
+        <iframe class="schedule-frame" src="https://baseball-freak.github.io/BaseballFreak/2025/npb/regular/cl/schedule.html"></iframe>
+    </div>
 
-<h2>セ・リーグ（CL）</h2>
-<p><a href="https://baseball-freak.github.io/BaseballFreak/2025/npb/regular/cl/schedule.html" target="_blank">CL スケジュールを見る</a></p>
-
-<h2>パ・リーグ（PL）</h2>
-<p><a href="https://baseball-freak.github.io/BaseballFreak/2025/npb/regular/pl/schedule.html" target="_blank">PL スケジュールを見る</a></p>
+    <div class="pl-schedule">パ・リーグ (PL)</div>
+    <div class="iframe-container">
+        <iframe class="schedule-frame" src="https://baseball-freak.github.io/BaseballFreak/2025/npb/regular/pl/schedule.html"></iframe>
+    </div>
 
 </body>
 </html>
